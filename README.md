@@ -5,7 +5,7 @@
 Download the package from GitHub
 
 ```shell
-git clone https://github.com/coderaidershaun/chatbot-conversation-jarvis.git chatbot
+git clone https://github.com/ChandanVK6/AI-voice-ChatBot.git chatbot
 ```
 
 ## Setup backend
@@ -47,7 +47,7 @@ pip3 install --upgrade pip
 Install required Python packages
 
 ```shell
-pip3 install openai python-decouple fastapi "uvicorn[standard]" python-multipart
+pip3 install  python-decouple fastapi "uvicorn[standard]" python-multipart
 ```
 
 Or use this alternative method (although this alternative method might not work if using Windows)
@@ -67,9 +67,8 @@ touch .env
 Update your .env file with the following. You can see your .env by typing sudo nano .env or just by clicking on the file if you are in VS Code.
 
 ```plain
-OPEN_AI_ORG=enter-you-key-here
-OPEN_AI_KEY=enter-you-key-here
-ELEVEN_LABS_API_KEY=enter-you-key-here
+ASSEMBLY_AI_KEY=your_api_key
+ELEVEN_LABS_API_KEY=your_api_key
 ```
 
 ### Start your backend server
