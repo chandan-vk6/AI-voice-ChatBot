@@ -13,7 +13,7 @@ model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
 tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
 tokenizer.pad_token = tokenizer.eos_token
 
-
+# you can also use openAI whishper which is much more efficient and faster
 # Convert audio to text
 def convert_audio_to_text(audio_file):
   try:
@@ -25,7 +25,8 @@ def convert_audio_to_text(audio_file):
   except Exception as e:
     return
 
-
+# what i have implemented is i have model and  iam  getting response from that which is  very /
+# slow respones instead you can get it from openai or another using api which is faster
 # Convert audio to text
 def get_chat_response(message_input):
 
