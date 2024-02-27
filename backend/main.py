@@ -62,7 +62,7 @@ async def post_audio(file: UploadFile = File(...)):
     if file.filename is None:
         return 
     # Decode audio
-    message_decoded = convert_audio_to_text("/home/u10/Desktop/chatbot-conversation-jarvis-main/backend/{}".format(file.filename))
+    message_decoded = convert_audio_to_text("/home/u10/Desktop/chatbot-conversation-main/backend/{}".format(file.filename))
     print(message_decoded)
     # Guard: Ensure output
     if not message_decoded:
